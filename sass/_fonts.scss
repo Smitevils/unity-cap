@@ -1,0 +1,139 @@
+/* font-family: "ProximaNovaT-Thin"; */
+@font-face {
+	font-family: "MyriadPro";
+	src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+	src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+	url('../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff2') format('woff2'), 
+	url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "MyriadPro";
+	src: url("../fonts/MyriadPro/MyriadProItalic/MyriadProItalic.eot");
+	src: url("../fonts/MyriadPro/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadPro/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+	url('../fonts/MyriadPro/MyriadProItalic/MyriadProItalic.woff2') format('woff2'), 
+	url("../fonts/MyriadPro/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "MyriadPro";
+	src: url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.eot");
+	src: url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+	url('../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.woff2') format('woff2'), 
+	url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: "MyriadPro";
+	src: url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+	src: url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
+	url('../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff2') format('woff2'), 
+	url("../fonts/MyriadPro/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "MyriadPro";
+	src: url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+	src: url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+	url('../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.woff2') format('woff2'), 
+	url("../fonts/MyriadPro/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "MyriadPro";
+	src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot");
+	src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.woff") format("woff"),
+	url('../fonts/MyriadPro/MyriadProBold/MyriadProBold.woff2') format('woff2'), 
+	url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@mixin MyriadPro {
+	font-family: 'MyriadPro', MyriadPro, sans-serif;
+}
+
+/* font-family: "ProximaNovaT-Thin"; */
+@font-face {
+	font-family: "GothamPro";
+	src: url("../fonts/Gotham/GothaProReg/GothamPro.eot");
+	src: url("../fonts/Gotham/GothaProReg/GothamPro.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Gotham/GothaProReg/GothamPro.woff") format("woff"),
+	url('../fonts/Gotham/GothaProReg/GothamPro.woff2') format('woff2'), 
+	url("../fonts/Gotham/GothaProReg/GothamPro.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "GothamPro";
+	src: url("../fonts/Gotham/GothaProMed/GothamPro-Medium.eot");
+	src: url("../fonts/Gotham/GothaProMed/GothamPro-Medium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Gotham/GothaProMed/GothamPro-Medium.woff") format("woff"),
+	url('../fonts/Gotham/GothaProMed/GothamPro-Medium.woff2') format('woff2'), 
+	url("../fonts/Gotham/GothaProMed/GothamPro-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "GothamPro";
+	src: url("../fonts/Gotham/GothaProBol/GothamPro-Bold.eot");
+	src: url("../fonts/Gotham/GothaProBol/GothamPro-Bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Gotham/GothaProBol/GothamPro-Bold.woff") format("woff"),
+	url('../fonts/Gotham/GothaProBol/GothamPro-Bold.woff2') format('woff2'), 
+	url("../fonts/Gotham/GothaProBol/GothamPro-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@mixin GothamPro {
+	font-family: 'GothamPro', GothamPro, sans-serif;
+}
+
+@font-face {
+	font-family: "RussoOne";
+	src: url("../fonts/RussoOne/RussoOneRegular.eot");
+	src: url("../fonts/RussoOne/RussoOneRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RussoOne/RussoOneRegular.woff") format("woff"),
+	url("../fonts/RussoOne/RussoOneRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin RussoOne {
+	font-family: 'RussoOne', RussoOne, sans-serif;
+}
+
+@font-face {
+	font-family: "RussoSans";
+	src: url("../fonts/RussoSans/RussoSansBold/RussoSansBold.eot");
+	src: url("../fonts/RussoSans/RussoSansBold/RussoSansBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RussoSans/RussoSansBold/RussoSansBold.woff") format("woff"),
+	url("../fonts/RussoSans/RussoSansBold/RussoSansBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@mixin RussoSans {
+	font-family: 'RussoSans', RussoSans, sans-serif;
+}
+
+body {
+	letter-spacing: 2px;
+}

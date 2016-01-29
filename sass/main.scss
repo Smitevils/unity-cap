@@ -1,0 +1,538 @@
+@charset "utf-8";
+
+
+@import 'sanitize';
+
+//@import 'normalize';
+
+@import 'animate';
+
+@import 'variables';
+
+@import 'fonts';
+
+@import 'mixins';
+
+@import 'sv-grid';
+
+@import 'panel';
+
+//* {outline: 1px yellowgreen dashed;}
+
+html {font-size: 16px;}
+
+.ivent-comment {
+	display: inline-block;
+	@include MyriadPro; font-weight: 400;
+	@include font-size(12px);
+	color: $ft-color-5;
+	padding: 8px 20px 8px 46px;
+	border-left: 2px solid $border-color-5;
+}
+
+.logo-container {
+	height: 100%;
+	@include flexbox-center__dir-row;
+	justify-content: center;
+}
+
+/* `t */
+
+select.select-1 {
+	background: transparent url(../img/icons/select-1.png) center right no-repeat;
+	background-size: 14px 7px;
+	padding-right: 18px;
+	outline: none;
+	cursor: pointer;
+	color: $ft-color-2;
+	@include font-size(12px);
+	@include RussoSans;
+	font-weight: 700;
+	appearance: none;
+	border: none;
+	//
+	option {
+		background-color: transparent;
+	}
+	//
+	&:hover {
+		background: transparent url(../img/icons/select-1-hover.png) center right no-repeat;
+		background-size: 14px 7px;
+		color: $ft-color-1;
+		option {
+			color: $ft-color-2;
+		}
+	}
+}
+
+/* titles */
+
+.title-1 {
+	display: inline-block;
+	margin: 0;
+	padding: 11px 14px;
+	@include font-size(12px);
+	@include RussoSans;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	color: $ft-color-1;
+	//
+	&:after {
+		content: "";
+		width: 100%;
+		height: 1px;
+		position: absolute; bottom: 0; left: 0;
+		background-color: $border-color-3;
+	}
+}
+.title-2 {
+	display: inline-block;
+	margin: 0;
+	padding: 11px 14px;
+	@include font-size(12px);
+	@include RussoSans;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	color: $ft-color-3;
+	//
+	&:after {
+		content: "";
+		width: 100%;
+		height: 1px;
+		position: absolute; bottom: 0; left: 0;
+		background-color: $border-color-3;
+	}
+}
+
+/* main-container */
+
+.main-container {
+	height: 100px;
+	height: calc(100vh - 196px);
+	background-color: $bg-color-4;
+	overflow: hidden;
+}
+
+.main-aside {
+	width: 20%;
+	height: 100%;
+	padding: 40px 40px; box-sizing: border-box;
+	text-align: center;
+	background-color: $bg-color-5;
+	box-shadow: 31px 0px 59px -11px rgba(0,0,0,0.15);
+	float: left;
+}
+.main-content {
+	width: 80%; height: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: $bg-color-4;
+	float: left;
+}
+.main-content__header {
+	margin-bottom: 22px;
+	//
+	.sv-division-2:first-child {
+		text-align: left;
+	}
+	.sv-division-2:last-child {
+		text-align: right;
+	}
+}
+
+
+
+.footer-content {
+	height: 100%;
+	//
+	a, p {
+		@include GothamPro;
+		font-weight: 400;
+		@include font-size(11px);
+		text-decoration: none;
+		color: $ft-color-4;
+	}
+	a {
+		span {
+			font-weight: 600;
+		}
+	}
+	a:hover {
+		color: $ft-color-1;
+	}
+	//
+	.sv-row {padding-top: 36px;}
+	.sv-division-2 {}
+	.sv-division-2:first-child {
+		text-align: left; padding-left: 40px;
+	}
+	.sv-division-2:last-child {
+		text-align: right; padding-right: 40px;
+	}
+}
+
+.content-scrolled {
+	max-height: 90%;
+}
+
+.content-block {
+	background-color: $bg-color-3;
+	padding: 30px 40px;
+	margin-bottom: 14px;
+}
+
+.user-info {
+	//
+	.sv-v-align {
+		vertical-align: middle;
+	}
+}
+/* */
+
+.ivent-recharges {
+	height: 100%; vertical-align: middle;
+	//
+	.sv-v-align {
+		height: 100%; vertical-align: middle;
+	}
+}
+.ivent-recharges__text {
+	display: inline-block;
+	@include font-size(14px);
+	@include RussoSans;
+	color: $ft-color-1;
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.ivent-recharges__text + .recharges {margin-left: 40px;}
+
+.ivent-adding-user {
+	height: 100%; vertical-align: middle;
+	//
+	.sv-v-align {
+		height: 100%; vertical-align: middle;
+	}
+}
+
+.recharges {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.recharges__element {
+	display: inline-block;
+	@include font-size(14px);
+	@include RussoOne;
+	color: $ft-color-1;
+	vertical-align: middle;
+}
+.recharges__start {color: $ft-color-1;}
+.recharges__end {color: $ft-color-6;}
+.recharges__arrow {
+	width: 46px; height: 14px;
+	background:transparent url(../img/icons/recharges-arrow.png) center no-repeat;
+	background-size: cover;
+	margin: 0 24px;
+}
+
+.content-block__wrap {
+	padding: 10px 0;
+}
+
+/**/
+
+.ivent-end-match {
+	height: 100%; vertical-align: middle; padding: 0;
+	background-color: $bg-color-9;
+	//
+	.sv-row {
+		height: 100%;
+	}
+	.sv-v-align {
+		height: 100%; vertical-align: top;
+		@include font-size(14px);
+	}
+	.sv-v-align:first-child {
+		background-color: #3e475f;
+	}
+}
+
+.end-match-container {
+	padding: 40px;
+}
+.end-match-container__ivent {
+
+}
+.end-match-container__ivent__title {
+	text-transform: uppercase;
+	color: $ft-color-1;
+	@include font-size(14px);
+	@include RussoSans; font-weight: 700;
+}
+
+.end-match-container__ivent__blocks-wrap {
+	padding-top: 12px;
+	height: 240px;
+	//
+	.sv-row {height: 100%;}
+	.sv-division-2 {height: 100%;}
+	.sv-division-2:first-child {text-align: left;}
+	.sv-division-2:last-child {text-align: right;}
+}
+.end-match-container__ivent__block {
+	width: 95%;
+	height: 100%;
+	display: inline-block;
+	background-color: $bg-color-4;
+}
+
+.end-match-container__ivent__block__img {
+	position: relative;
+	//
+	img {
+		width: 100%; height: 100%;
+		object-fit: cover;
+	}
+}
+.end-match-container__ivent__block__img__date {
+	position: absolute; top: 0; right: 0;
+	background-color: $bg-color-10;
+	padding: 14px;
+	color: $ft-color-1;
+	text-align: center;
+	p {margin: 0; padding: 0; @include RussoSans; font-weight: 400;}
+	p:first-child {
+		@include font-size(18px);
+	}
+	p:last-child {
+		@include font-size(12px);
+	}
+}
+
+.end-match-container__ivent__block__command {
+	width: 100%; height: 100%;
+	@include flexbox-center__dir-col;
+	justify-content: center;
+	padding: 0;
+}
+
+.end-match-container__text {
+	background-color: $bg-color-9;
+}
+.end-match-container__text__title {
+	text-transform: uppercase; margin: 0; padding: 0;
+	@include font-size(24px);
+	@include RussoOne;
+	color: $ft-color-1;
+}
+.end-match-container__text__subtitle {
+	margin: 0; padding: 0;
+	@include font-size(12px);
+	@include MyriadPro; font-weight: 400;
+	color: $ft-color-5;
+}
+.end-match-container__text__list {
+	text-transform: uppercase;
+	list-style: none;
+	padding: 20px 0 0 0;
+	color: $ft-color-1;
+	@include font-size(12px);
+	@include RussoSans; font-weight: 700;
+	//
+	span {
+		color: $ft-color-6;
+	}
+}
+
+/* --- */
+
+.load-ivents {
+	display: inline-block; box-sizing: border-box;
+	width: 100%;
+	padding: 20px;
+	color: $ft-color-7;
+	text-align: center;
+	@include font-size(12px);
+	@include RussoOne;
+	background: $bg-color-6;
+	cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+	@include transition-all__0-3;
+	//
+	&:hover {
+		color: $ft-color-1;
+	}
+}
+
+
+.command-item {
+	display: inline-block; font-size: 0; margin: 10px;
+	//
+	img {
+		display: inline-block; vertical-align: middle;
+		width: 40px; height: 40px;
+	}
+	span {
+		@include RussoSans; font-size: 700px; padding: 0; margin: 0; vertical-align: middle;
+		@include font-size(12px);
+		color: $ft-color-1;
+		text-transform: uppercase;
+	}
+	img + span {margin-left: 20px;}
+}
+
+/************** для страницы друзья ****************/
+
+.friend-container {
+	height: 160px;
+	background-color: $bg-color-3;
+	margin-bottom: 20px;
+	//
+	.sv-row {
+		height: 100%;
+	}
+	.sv-v-align {
+		height: 100%;
+	}
+}
+.friend-container__text {
+	padding: 30px 40px; height: 100%;
+}
+.friend-container__text__title {
+	display: block;
+	@include font-size(24px);
+	color: $ft-color-1;
+	text-transform: uppercase;
+}
+.friend-container__text__subtitle {
+	display: block;
+	@include font-size(14px);
+	color: $ft-color-3;
+	text-transform: uppercase; margin: 0;
+}
+.friend-container__text__othertext {
+	display: block;
+	@include font-size(12px);
+	color: $ft-color-3; padding-top: 20px;
+}
+//
+.friend-container__img-status {
+	width: 100%; height: 100%;
+	background-color: $bg-color-1;
+	@include flexbox-center__dir-col;
+	justify-content: center;
+	padding: 0;
+}
+.friend-container__img-status__img {
+	display: block;
+	width: 38px; height: 38px;
+	border-radius: 50%; overflow: hidden;
+	//
+	img {
+		width: 100%; height: 100%; object-fit: contain;
+	}
+}
+
+/**/
+.status-block {
+	display: inline-block;
+	padding: 7px 14px;
+	border: 2px solid $border-color-7;
+	text-transform: uppercase;
+	@include font-size(8px);
+	@include RussoSans; font-weight: 700;
+	color: $ft-color-1;
+}
+.status-block.online {
+	color: $ft-color-6;
+}
+.status-block.offline {
+	color: $border-color-7;
+}
+/**/
+.friend-container__img-status__img + .status-block {
+	margin-top: 20px;
+}
+
+/**/
+
+.friend-container__operations {
+	width: 100%; height: 100%;
+	background-color: $bg-color-1;
+	@include flexbox-center__dir-row;
+	justify-content: center;
+	padding: 0;
+}
+
+/**/
+
+.search-friends {
+	background-color: $bg-color-7;
+	padding: 34px 0;
+	margin-bottom: 40px;
+	margin-top: -40px;
+	margin-left: -40px; padding-left: 40px;
+	margin-right: -40px; padding-right: 40px;
+	font-size: 20px;
+	box-sizing: border-box;
+	//
+	.sv-v-align:nth-of-type(1) {text-align: left;}
+	.sv-v-align:nth-of-type(2) {text-align: center;}
+	.sv-v-align:nth-of-type(3) {text-align: right;}
+}
+
+.search-friends__quantity-friends {
+	display: inline-block;
+	vertical-align: middle;
+	color: $ft-color-6;
+	text-transform: uppercase;
+	@include RussoSans; font-size: 700px;
+	@include font-size(12px);
+	margin: 0;
+}
+
+.search-friends__list-user {
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	color: $ft-color-7;
+	text-transform: uppercase;
+	@include RussoSans; font-size: 700px;
+	@include font-size(12px);
+	margin: 0;
+	//
+	&:after {
+		content: "";
+		display: inline-block;
+		height: 10px;
+		width: 6px;
+		background: url('../img/icons/arrow-2.png') center no-repeat;
+		background-size: contain;
+		margin-left: 10px;
+	}
+}
+
+.input-search-friends {
+	width: 80%;
+	@include font-size(14px);
+	color: $ft-color-1;
+	border-bottom: 2px solid $border-color-3;
+	padding: 2px 30px 2px 12px;
+	outline: none;
+	background: url('../img/icons/loupe.png') center right no-repeat;
+	background-size: 26px 13px;
+	box-sizing: border-box;
+}
+.input-search-friends::-webkit-input-placeholder {color:#fff;}
+.input-search-friends::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.input-search-friends:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.input-search-friends:-ms-input-placeholder      {color:#fff;}
+
+/***************************************/
+@import 'adaptive';

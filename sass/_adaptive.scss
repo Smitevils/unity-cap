@@ -1,0 +1,17 @@
+@media screen and (max-width: 1680px) {
+	html {font-size: 14px;}
+}
+@media screen and (max-width: 1366px) {
+	html {font-size: 12px;}
+}
+
+@media all and (orientation:portrait) {
+	/* стили для портрета */
+	body {
+		display: none;
+	}
+}
+
+@media all and (orientation:landscape) {
+	/* стили для пейзажа */
+}
