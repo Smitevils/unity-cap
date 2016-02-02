@@ -191,6 +191,10 @@ select.select-1 {
 	margin-bottom: 14px;
 }
 
+.ivents .content-scrolled {
+	height: 90%;
+}
+
 .user-info {
 	//
 	.sv-v-align {
@@ -480,6 +484,10 @@ select.select-1 {
 
 /**/
 
+.friends .content-scrolled {
+	height: 86%;
+}
+
 .search-friends {
 	background-color: $bg-color-7;
 	padding: 34px 0;
@@ -712,8 +720,7 @@ select.select-1 {
 }
 
 .subscription__tarif-block {
-	width: 30%; height: 440px;
-	//background-color: red;
+	width: 30%; height: 430px;
 	position: relative;
 }
 
@@ -723,6 +730,8 @@ select.select-1 {
 	@include font-size(14px);
 	color: $ft-color-8;
 	padding: 0; margin: 4px 0;
+	position: relative;
+	z-index: 999;
 }
 
 .subscription__tarif-block__title {
@@ -731,13 +740,16 @@ select.select-1 {
 	@include RussoOne;
 	line-height: 1;
 	text-transform: uppercase;
-
+	position: relative;
+	z-index: 999;
 }
 
 .subscription__tarif-block__list {
 	padding-top: 54px;
 	list-style: none;
 	padding-left: 40px; padding-right: 70px;
+	position: relative;
+	z-index: 999;
 	//
 	li {
 		margin: 10px 0;
@@ -746,6 +758,7 @@ select.select-1 {
 		font-weight: 400;
 		@include font-size(12px);
 		position: relative;
+		@include transition-all__0-3;
 	}
 	li:before {
 		content: "";
@@ -762,17 +775,43 @@ select.select-1 {
 .subscription__tarif-block__content {
 	position: relative; height: 360px;
 	padding-top: 28px;
-	background: url(../img/other/img-3.png) no-repeat center;
+	background: url(../img/tarifs/subscribe-1.png) no-repeat center;
 	background-size: cover;
-	//
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		position: absolute;
-		top: 0; left: 0;
-		z-index: 0;
+}
+
+.subscription__tarif-block__content__texture-2 {
+	background: url(../img/tarifs/subscribe-2.png) no-repeat center;
+	background-size: cover;
+}
+
+.subscription__tarif-block__content__texture-3 {
+	background: url(../img/tarifs/subscribe-3.png) no-repeat center;
+	background-size: cover;
+}
+
+.subscription__tarif-block__content__sticker {
+	content: "";
+	display: block;
+	width: 100%; height: 100%;
+	background: url(../img/tarifs/subscribe_texture_02.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: 0; left: 0;
+	@include transition-all__0-3;
+	opacity: 1;
+	z-index: 1;
+}
+
+.subscription__tarif-block:hover {
+	.subscription__tarif-block__list {
+		li {
+			margin: 10px 0;
+			color: $ft-color-1;
+		}
 	}
+}
+.subscription__tarif-block:hover .subscription__tarif-block__content__sticker {
+	opacity: 0;
 }
 
 .subscription__tarif-block__btn {
@@ -780,10 +819,13 @@ select.select-1 {
 	// position: absolute;
 	// bottom: 0;
 	background-color: $bg-color-9;
+	position: relative;
 	@include RussoSans; font-weight: 700;
 	@include font-size(14px);
 	color: $ft-color-1;
 	padding: 24px 0;
+	position: relative;
+	z-index: 100;
 	//
 	p {
 		display: inline-block;
@@ -825,6 +867,101 @@ select.select-1 {
 .tafif-3 .subscription__tarif-block__list li:before {
 	background-color: $ft-color-10;
 }
+
+/***************************************/
+
+.games .content-scrolled {
+	height: 90%;
+}
+
+.games .sv-division-2 {
+	text-align: right;
+}
+
+.games-table {
+	width: 100%;
+}
+
+.games-table tr:nth-of-type(2n) {
+	background-color: $bg-color-6;
+}
+.games-table tr:nth-of-type(2n+1) {
+	background-color: $bg-color-5;
+}
+.games-table tr:first-child {
+	background-color: $bg-color-12;
+	border-bottom:2px solid $bg-color-4;
+}
+
+.games-table tr th {
+	text-align: left;
+	padding: 25px;
+	text-transform: uppercase;
+	@include RussoSans; font-weight: 700;
+	@include font-size(12px);
+	//
+	a {
+		color: $ft-color-1;
+		text-transform: uppercase;
+		@include RussoSans; font-weight: 700;
+		@include font-size(12px);
+	}
+}
+
+.games-table tr td {
+	text-align: left;
+	padding: 25px;
+	border-right: 2px solid $bg-color-4;
+	text-transform: uppercase;
+	@include RussoSans; font-weight: 700;
+	@include font-size(10px);
+}
+.games-table tr td:last-child {border-right: none;}
+
+
+.game-statistic {
+	@include RussoSans; font-weight: 700;
+	@include font-size(9px);
+	margin: 30px 0 0 0;
+	color: $ft-color-2;
+}
+.game-statistic:hover {
+	color: $ft-color-1;
+}
+
+/***************************************/
+
+/* tabs */
+
+.tabs {
+	display: inline-block;
+	//
+	li {
+		display: inline-block; margin-left: -2px;
+		//
+		a {
+			display: inline-block;
+			@include RussoSans; font-weight: 700;
+			@include font-size(12px);
+			color: $ft-color-1;
+			min-width: 194px;
+			padding: 5px 5px;
+			text-align: center;
+			border-bottom: 2px solid transparent;
+			@include transition-all__0-3;
+		}
+		a:hover, a.active {
+			border-bottom: 2px solid $border-color-2;
+		}
+	}
+}
+.tabs-content {
+	display: none;
+}
+.tabs-content.open {
+	display: block;
+}
+
 
 /***************************************/
 @import 'adaptive';

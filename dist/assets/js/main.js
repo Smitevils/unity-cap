@@ -31,7 +31,7 @@ $(document).ready(function() {
 		}
 	});
 
-	
+
 
 	/* open/close submenu */
 	$('#open-main-navigation').on('click', function(event) {
@@ -54,4 +54,22 @@ $(document).ready(function() {
 		theme:"dark",
 		scrollbarPosition: "outside"
 	});
+
+	/* tabs */
+
+	function checkTabs(tab_number) {
+		$('.tabs a').removeClass('active')
+		$('.tabs a[data-tab=' + tab_number + ']').addClass('active');
+		$('.tabs-content').removeClass('open');
+		$('.tabs-content[data-tab-content=' + tab_number + ']').addClass('open');
+	}
+
+	checkTabs(1);
+
+	$('.tabs a').on('click', function(event) {
+		event.preventDefault();
+		var tab_number = $(this).data('tab');
+		checkTabs(tab_number);
+	});
+
 });
