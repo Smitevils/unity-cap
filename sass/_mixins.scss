@@ -1,5 +1,5 @@
 @mixin border-radius {
-	
+
 }
 
 /* px to rem */
@@ -60,6 +60,20 @@ p {
 	align-items: center;
 	flex-direction: row;
 	justify-content: flex-start;
+}
+
+@mixin flexbox-center__dir-row-just-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+@mixin flexbox-center__dir-row-just-space-bet {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
 }
 
 /* transitions */

@@ -36,6 +36,14 @@ html {font-size: 16px;}
 	justify-content: center;
 }
 
+/* buttons */
+
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	border: none;
+}
+
 /* `t */
 
 select.select-1 {
@@ -174,7 +182,7 @@ select.select-1 {
 }
 
 .content-scrolled {
-	max-height: 90%;
+	max-height: 100%;
 }
 
 .content-block {
@@ -533,6 +541,290 @@ select.select-1 {
 .input-search-friends::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
 .input-search-friends:-moz-placeholder           {color:#fff;}/* Firefox 18- */
 .input-search-friends:-ms-input-placeholder      {color:#fff;}
+
+/* subscription */
+
+.subscription {}
+
+.subscription__you-tarif {
+	width: 100%; height: 100%;
+	@include flexbox-center__dir-row-just-center;
+	@include font-size(14px);
+	background-color: $bg-color-5;
+}
+
+.subscription__you-tarif__cost {
+	display: inline-block;
+	background-color: $bg-color-11;
+	text-align: center;
+	padding: 10px;
+	letter-spacing: 0;
+	@include MyriadPro;
+	font-weight: 400;
+	vertical-align: middle;
+	//
+	p {margin: 0;}
+	p:first-child {
+		@include font-size(18px);
+		line-height: 18px;
+	}
+	p:last-child {
+		@include font-size(12px);
+		line-height: 12px;
+	}
+}
+
+.subscription__you-tarif__cost + .subscription__you-tarif__text {
+	margin-left: 20px;
+}
+
+.subscription__you-tarif__text {
+	display: inline-block;
+	vertical-align: middle;
+	@include font-size(14px);
+	p {margin: 0;}
+}
+.subscription__you-tarif__title {
+	text-transform: uppercase;
+	color: $ft-color-8;
+	@include RussoSans; font-weight: 700;
+	@include font-size(14px);
+}
+.subscription__you-tarif__tarif-name {
+	text-transform: uppercase;
+	@include font-size(30px);
+	@include RussoOne;
+	line-height: 1;
+}
+
+.subscription__you-tarif__tarif-name__color__white {
+	color: $ft-color-1;
+}
+.subscription__you-tarif__tarif-name__color__blue {
+	color: $ft-color-9;
+}
+.subscription__you-tarif__tarif-name__color__purple {
+	color: $ft-color-10;
+}
+
+/**/
+
+.subscription__yet-days-tarif {
+	width: 100%; height: 100%;
+	@include flexbox-center__dir-row-just-center;
+	@include font-size(14px);
+	background-color: $bg-color-9;
+}
+
+.subscription__yet-days-tarif__circle {
+	width: 44px; height: 44px;
+	display: inline-block;
+	background: url(../img/icons/days-circle.png) no-repeat center;
+	background-size: contain;
+	@include flexbox-center__dir-row-just-center;
+	//
+	p {
+		margin: 0;
+		@include font-size(18px);
+		@include RussoOne;
+		font-weight: 700;
+		text-align: center;
+		padding-left: 3px;
+	}
+}
+
+.subscription__yet-days-tarif__circle + .subscription__yet-days-tarif__text {margin-left: 20px;}
+
+.subscription__yet-days-tarif__text {
+	display: inline-block;
+	text-transform: uppercase;
+	@include RussoSans; font-weight: 700;
+	@include font-size(12px);
+}
+
+/**/
+
+.subscription__extend {
+	width: 100%; height: 100%;
+	@include flexbox-center__dir-row-just-center;
+	@include font-size(14px);
+}
+
+.subscription__extend__btn {
+	background-color: transparent;
+	border: 2px solid $border-color-8;
+	padding: 20px 80px;
+	@include font-size(12px);
+	@include RussoOne;
+	font-weight: 700;
+	text-transform: uppercase;
+	//
+	p {
+		display: inline-block;
+		margin: 0; padding: 0;
+		vertical-align: middle;
+	}
+}
+
+.subscription__extend__btn__arrow {
+	display: inline-block;
+	width: 9px; height: 18px;
+	background: url(../img/icons/white-arrow.png) no-repeat center;
+	background-size: contain;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.subscription__extend__btn:hover {
+	background-color: $border-color-8;
+}
+
+/**/
+
+.subscription__tarif-info {
+	padding: 0;
+	//
+	.sv-row {vertical-align: top;}
+	//
+	.sv-v-align {height: 122px; vertical-align: top;}
+	.sv-v-align:nth-of-type(1) {
+		background-color: $bg-color-5;
+	}
+	.sv-v-align:nth-of-type(2) {
+		background-color: $bg-color-9;
+	}
+	.sv-v-align:nth-of-type(3) {
+		background-color: $bg-color-5;
+	}
+}
+
+.subscription__tarif-info__container {
+	padding: 20px 0;
+}
+
+/***/
+
+.subscription__tarifs-container {
+	width: 100%; height: 100%;
+	@include flexbox-center__dir-row-just-space-bet
+	@include font-size(14px);
+	margin: 30px 0 0 0;
+}
+
+.subscription__tarif-block {
+	width: 30%; height: 440px;
+	//background-color: red;
+	position: relative;
+}
+
+.subscription__tarif-block__under-title {
+	text-align: center;
+	@include RussoSans; font-weight: 700;
+	@include font-size(14px);
+	color: $ft-color-8;
+	padding: 0; margin: 4px 0;
+}
+
+.subscription__tarif-block__title {
+	text-align: center;
+	@include font-size(30px);
+	@include RussoOne;
+	line-height: 1;
+	text-transform: uppercase;
+
+}
+
+.subscription__tarif-block__list {
+	padding-top: 54px;
+	list-style: none;
+	padding-left: 40px; padding-right: 70px;
+	//
+	li {
+		margin: 10px 0;
+		color: $ft-color-8;
+		@include MyriadPro;
+		font-weight: 400;
+		@include font-size(12px);
+		position: relative;
+	}
+	li:before {
+		content: "";
+		display: inline-block;
+		width: 24px;
+		height: 1px;
+		position: absolute;
+		left: -40px;
+		top: 8px;
+		background-color: white;
+	}
+}
+
+.subscription__tarif-block__content {
+	position: relative; height: 360px;
+	padding-top: 28px;
+	background: url(../img/other/img-3.png) no-repeat center;
+	background-size: cover;
+	//
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0; left: 0;
+		z-index: 0;
+	}
+}
+
+.subscription__tarif-block__btn {
+	width: 100%;
+	// position: absolute;
+	// bottom: 0;
+	background-color: $bg-color-9;
+	@include RussoSans; font-weight: 700;
+	@include font-size(14px);
+	color: $ft-color-1;
+	padding: 24px 0;
+	//
+	p {
+		display: inline-block;
+		margin: 0; padding: 0;
+		vertical-align: middle;
+	}
+}
+.subscription__tarif-block__btn__arrow {
+	display: inline-block;
+	width: 9px; height: 18px;
+	background: url(../img/icons/white-arrow.png) no-repeat center;
+	background-size: contain;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+
+.subscription__tarif-block__btn:hover {
+	background-color: $bg-color-9-hover;
+}
+
+.tafif-1 .subscription__tarif-block__title {
+	color: $ft-color-1;
+}
+.tafif-1 .subscription__tarif-block__list li:before {
+	background-color: $border-color-9;
+}
+
+.tafif-2 .subscription__tarif-block__title {
+	color: $border-color-6;
+}
+.tafif-2 .subscription__tarif-block__list li:before {
+	background-color: $border-color-6;
+}
+
+.tafif-3 .subscription__tarif-block__title {
+	color: $ft-color-10;
+}
+.tafif-3 .subscription__tarif-block__list li:before {
+	background-color: $ft-color-10;
+}
 
 /***************************************/
 @import 'adaptive';

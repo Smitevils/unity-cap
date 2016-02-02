@@ -2755,6 +2755,12 @@ p {
   font-size: 0;
   margin-right: -2px; }
 
+.sv-division-3 {
+  width: 33.33333333%;
+  display: inline-block;
+  font-size: 0;
+  margin-right: -2px; }
+
 .sv-division-10-per {
   display: inline-block;
   width: 10%;
@@ -3327,6 +3333,12 @@ html {
       -ms-flex-pack: center;
           justify-content: center; }
 
+/* buttons */
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none; }
+
 /* `t */
 select.select-1 {
   background: transparent url(../img/icons/select-1.png) center right no-repeat;
@@ -3448,7 +3460,7 @@ select.select-1 {
     padding-right: 40px; }
 
 .content-scrolled {
-  max-height: 90%; }
+  max-height: 100%; }
 
 .content-block {
   background-color: #3e475f;
@@ -3903,6 +3915,355 @@ select.select-1 {
 /* Firefox 18- */
 .input-search-friends:-ms-input-placeholder {
   color: #fff; }
+
+/* subscription */
+.subscription__you-tarif {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 14px;
+  font-size: 0.875rem;
+  background-color: #3e475f; }
+
+.subscription__you-tarif__cost {
+  display: inline-block;
+  background-color: #535c73;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 0;
+  font-family: 'MyriadPro', MyriadPro, sans-serif;
+  font-weight: 400;
+  vertical-align: middle; }
+  .subscription__you-tarif__cost p {
+    margin: 0; }
+  .subscription__you-tarif__cost p:first-child {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 18px; }
+  .subscription__you-tarif__cost p:last-child {
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 12px; }
+
+.subscription__you-tarif__cost + .subscription__you-tarif__text {
+  margin-left: 20px; }
+
+.subscription__you-tarif__text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-size: 0.875rem; }
+  .subscription__you-tarif__text p {
+    margin: 0; }
+
+.subscription__you-tarif__title {
+  text-transform: uppercase;
+  color: #747a8c;
+  font-family: 'RussoSans', RussoSans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+.subscription__you-tarif__tarif-name {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-family: 'RussoOne', RussoOne, sans-serif;
+  line-height: 1; }
+
+.subscription__you-tarif__tarif-name__color__white {
+  color: #fff; }
+
+.subscription__you-tarif__tarif-name__color__blue {
+  color: #21aee0; }
+
+.subscription__you-tarif__tarif-name__color__purple {
+  color: #798ef9; }
+
+/**/
+.subscription__yet-days-tarif {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 14px;
+  font-size: 0.875rem;
+  background-color: #414a62; }
+
+.subscription__yet-days-tarif__circle {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  background: url(../img/icons/days-circle.png) no-repeat center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .subscription__yet-days-tarif__circle p {
+    margin: 0;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-family: 'RussoOne', RussoOne, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 3px; }
+
+.subscription__yet-days-tarif__circle + .subscription__yet-days-tarif__text {
+  margin-left: 20px; }
+
+.subscription__yet-days-tarif__text {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'RussoSans', RussoSans, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+/**/
+.subscription__extend {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+.subscription__extend__btn {
+  background-color: transparent;
+  border: 2px solid #6a738a;
+  padding: 20px 80px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: 'RussoOne', RussoOne, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .subscription__extend__btn p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle; }
+
+.subscription__extend__btn__arrow {
+  display: inline-block;
+  width: 9px;
+  height: 18px;
+  background: url(../img/icons/white-arrow.png) no-repeat center;
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: 10px; }
+
+.subscription__extend__btn:hover {
+  background-color: #6a738a; }
+
+/**/
+.subscription__tarif-info {
+  padding: 0; }
+  .subscription__tarif-info .sv-row {
+    vertical-align: top; }
+  .subscription__tarif-info .sv-v-align {
+    height: 122px;
+    vertical-align: top; }
+  .subscription__tarif-info .sv-v-align:nth-of-type(1) {
+    background-color: #3e475f; }
+  .subscription__tarif-info .sv-v-align:nth-of-type(2) {
+    background-color: #414a62; }
+  .subscription__tarif-info .sv-v-align:nth-of-type(3) {
+    background-color: #3e475f; }
+
+.subscription__tarif-info__container {
+  padding: 20px 0; }
+
+/***/
+.subscription__tarifs-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 30px 0 0 0; }
+
+.subscription__tarif-block {
+  width: 30%;
+  height: 440px;
+  position: relative; }
+
+.subscription__tarif-block__under-title {
+  text-align: center;
+  font-family: 'RussoSans', RussoSans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #747a8c;
+  padding: 0;
+  margin: 4px 0; }
+
+.subscription__tarif-block__title {
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-family: 'RussoOne', RussoOne, sans-serif;
+  line-height: 1;
+  text-transform: uppercase; }
+
+.subscription__tarif-block__list {
+  padding-top: 54px;
+  list-style: none;
+  padding-left: 40px;
+  padding-right: 70px; }
+  .subscription__tarif-block__list li {
+    margin: 10px 0;
+    color: #747a8c;
+    font-family: 'MyriadPro', MyriadPro, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    font-size: 0.75rem;
+    position: relative; }
+  .subscription__tarif-block__list li:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+    background-color: white; }
+
+.subscription__tarif-block__content {
+  position: relative;
+  height: 360px;
+  padding-top: 28px;
+  background: url(../img/other/img-3.png) no-repeat center;
+  background-size: cover; }
+  .subscription__tarif-block__content img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; }
+
+.subscription__tarif-block__btn {
+  width: 100%;
+  background-color: #414a62;
+  font-family: 'RussoSans', RussoSans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #fff;
+  padding: 24px 0; }
+  .subscription__tarif-block__btn p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle; }
+
+.subscription__tarif-block__btn__arrow {
+  display: inline-block;
+  width: 9px;
+  height: 18px;
+  background: url(../img/icons/white-arrow.png) no-repeat center;
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: 10px; }
+
+.subscription__tarif-block__btn:hover {
+  background-color: #535c73; }
+
+.tafif-1 .subscription__tarif-block__title {
+  color: #fff; }
+
+.tafif-1 .subscription__tarif-block__list li:before {
+  background-color: #50586c; }
+
+.tafif-2 .subscription__tarif-block__title {
+  color: #21aee0; }
+
+.tafif-2 .subscription__tarif-block__list li:before {
+  background-color: #21aee0; }
+
+.tafif-3 .subscription__tarif-block__title {
+  color: #798ef9; }
+
+.tafif-3 .subscription__tarif-block__list li:before {
+  background-color: #798ef9; }
 
 /***************************************/
 @media screen and (max-width: 1680px) {
