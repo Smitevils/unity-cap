@@ -52,7 +52,8 @@ $(document).ready(function() {
 	/* custom scroll */
 	$(".content-scrolled").mCustomScrollbar({
 		theme:"dark",
-		scrollbarPosition: "outside"
+		scrollbarPosition: "outside",
+		scrollInertia: 100
 	});
 
 	/* tabs */
