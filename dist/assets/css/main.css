@@ -3293,7 +3293,21 @@ p {
           width: 2px; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px !important; }
+
+.rotate {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #050505;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../img/other/rotate.png");
+  background-size: 280px 280px;
+  z-index: 99999;
+  display: none; }
 
 .ivent-comment {
   display: inline-block;
@@ -3547,7 +3561,8 @@ select.select-1 {
     background-color: #3e475f; }
 
 .end-match-container {
-  padding: 40px; }
+  padding: 40px;
+  padding-top: 60px; }
 
 .end-match-container__ivent__title {
   text-transform: uppercase;
@@ -3632,7 +3647,8 @@ select.select-1 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0; }
+  padding: 0;
+  background: url(../img/icons/angle-left-top.png) no-repeat left top, url(../img/icons/angle-left-bottom.png) no-repeat bottom left, url(../img/icons/angle-right-top.png) no-repeat top right, url(../img/icons/angle-right-bottom.png) no-repeat bottom right; }
 
 .end-match-container__text {
   background-color: #414a62; }
@@ -3888,15 +3904,26 @@ select.select-1 {
   font-size: 700px;
   font-size: 12px;
   font-size: 0.75rem;
-  margin: 0; }
+  margin: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .search-friends__list-user:after {
     content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     display: inline-block;
     height: 10px;
     width: 6px;
     background: url("../img/icons/arrow-2.png") center no-repeat;
     background-size: contain;
     margin-left: 10px; }
+
+.search-friends__list-user:hover {
+  color: #fff; }
+
+.search-friends__list-user:hover:after {
+  background: url("../img/icons/arrow-1.png") center no-repeat;
+  background-size: contain; }
 
 .input-search-friends {
   width: 80%;
@@ -4214,7 +4241,7 @@ select.select-1 {
     content: "";
     display: inline-block;
     width: 24px;
-    height: 1px;
+    height: 2px;
     position: absolute;
     left: -40px;
     top: 8px;
@@ -4325,9 +4352,16 @@ select.select-1 {
   background-color: #4e566c;
   border-bottom: 2px solid #38415a; }
 
+.games-table tr:nth-of-type(1) th:first-child {
+  background: url(../img/icons/angle-left-top.png) no-repeat top left, url(../img/icons/angle-left-bottom.png) no-repeat bottom left; }
+
+.games-table tr:nth-of-type(1) th:last-child {
+  background: url(../img/icons/angle-right-top.png) no-repeat top right, url(../img/icons/angle-right-bottom.png) no-repeat bottom right; }
+
 .games-table tr th {
   text-align: left;
   padding: 25px;
+  padding-left: 0;
   text-transform: uppercase;
   font-family: 'RussoSans', RussoSans, sans-serif;
   font-weight: 700;
@@ -4340,6 +4374,17 @@ select.select-1 {
     font-weight: 700;
     font-size: 12px;
     font-size: 0.75rem; }
+    .games-table tr th a:before {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 12px;
+      background-color: #21aee0;
+      margin-right: 25px;
+      vertical-align: middle; }
+
+.games-table tr th:first-child a:before {
+  visibility: hidden; }
 
 .games-table tr td {
   text-align: left;
@@ -4359,11 +4404,28 @@ select.select-1 {
   font-weight: 700;
   font-size: 9px;
   font-size: 0.5625rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   margin: 30px 0 0 0;
   color: #93969e; }
+  .game-statistic:after {
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+    height: 10px;
+    width: 6px;
+    background: url("../img/icons/arrow-2.png") center no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    vertical-align: middle; }
 
 .game-statistic:hover {
   color: #fff; }
+
+.game-statistic:hover:after {
+  background: url("../img/icons/arrow-1.png") center no-repeat;
+  background-size: contain; }
 
 /***************************************/
 /* tabs */
@@ -4672,16 +4734,155 @@ select.select-1 {
   border-width: 14px 10px 14px 0;
   border-color: transparent #3f4860 transparent transparent; }
 
+/*****************/
+.subscription__tarif__cost {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #535c73;
+  text-align: center;
+  padding: 18px 16px;
+  letter-spacing: 0;
+  font-family: 'MyriadPro', MyriadPro, sans-serif;
+  font-weight: 400;
+  vertical-align: middle; }
+  .subscription__tarif__cost p {
+    margin: 0; }
+  .subscription__tarif__cost p:first-child {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 18px; }
+  .subscription__tarif__cost p:last-child {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 12px; }
+
 /***************************************/
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 14px !important; } }
+
 @media screen and (max-width: 1680px) {
   html {
-    font-size: 14px; } }
+    font-size: 14px !important; } }
 
 @media screen and (max-width: 1366px) {
   html {
+    font-size: 10px !important; }
+  .aside-navigation ul li {
+    font-size: 12px;
+    font-size: 0.75rem; }
+  .aside-navigation ul li a {
+    padding: 18px 18px; }
+  .user-block-middle .user-block__text {
+    font-size: 16px;
+    font-size: 1rem; } }
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 12px; }
+  .main-aside {
+    padding: 40px 20px; } }
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px; }
+  .main-aside {
+    padding: 20px 20px; }
+  .main-content {
+    padding: 20px; }
+  .content-block {
+    padding: 20px 20px; }
+  .end-match-container {
+    padding: 30px 20px 20px; }
+  .search-friends__list-user {
+    font-size: 10px;
+    font-size: 0.625rem; }
+  .search-friends {
+    padding: 20px 30px;
+    margin: -20px -20px 20px; }
+  .friend-container .sv-division-10-per {
+    width: 20%; }
+  .friend-container .sv-division-50-per {
+    width: 40%; }
+  .subscription__tarif-info {
+    padding: 0; }
+  .games-table tr th a {
+    font-size: 8px;
+    font-size: 0.5rem; }
+  .chat__aside {
+    padding: 10px; }
+  .chat__submit {
+    background-image: none; }
+  .subscription__extend__btn {
+    padding: 10px 20px; }
+  footer {
+    height: 50px; }
+  .main-container {
+    height: calc(100vh - 144px); }
+  .footer-content .sv-row {
+    padding-top: 12px; }
+  .chat {
+    padding: 0; }
+  .games-table tr th a:before {
+    margin-right: 14px; }
+  .tabs li a {
+    min-width: 170px; }
+  .header-menu-btn .header-menu-btn__text {
+    font-size: 20px;
+    font-size: 1.25rem; }
+  .btn__money-operation, .btn__transparent, .money-operation .money-operation__quantity {
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .ivent-comment {
+    font-size: 20px;
+    font-size: 1.25rem; }
+  .btn__friend-option {
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .status-block {
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .subscription__tarif-block__list {
+    padding-top: 24px;
+    padding-right: 20px; }
+  .subscription__tarif-block__list li {
+    font-size: 16px;
+    font-size: 1rem; }
+  .subscription__you-tarif__cost {
+    padding: 10px 14px; }
+  .subscription__tarif__cost {
+    padding: 14px 16px; }
+  .chat__aside {
+    width: 20%;
+    padding: 20px; }
+  .chat__container {
+    width: 80%; }
+  .chat__input {
+    width: 75%;
+    font-size: 22px;
+    font-size: 1.375rem; }
+  .chat__submit {
+    width: 22%;
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 14px 24px 14px 24px; }
+  .chat-message__message-cloud {
+    padding: 16px; }
+  .chat-message__text, .chat-message__time {
+    font-size: 20px;
+    font-size: 1.25rem; }
+  .chat-message__time {
+    font-size: 18px;
+    font-size: 1.125rem; } }
+
+@media screen and (max-width: 768px) {
+  html {
     font-size: 12px; } }
 
-@media all and (orientation: portrait) {
+@media all and (orientation: portrait) and (max-width: 768px) {
   /* стили для портрета */
-  body {
-    display: none; } }
+  .rotate {
+    display: block; } }

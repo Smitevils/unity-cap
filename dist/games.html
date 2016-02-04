@@ -5,9 +5,19 @@
 	<title>Counter Strike - Панель Администратора</title>
 	<link rel="stylesheet" href="assets/js/malihu-custom-scrollbar/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="assets/css/main.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+	<script type="text/javascript">
+	    if (screen.width > 700) { // Костыль для определения иных устройств, с коэффициентом отличным от 1
+	        console.log(screen.width)
+	        document.write('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">');
+	    } else {
+	        console.log(screen.width);
+	        document.write('<meta name="viewport" content="width=device-width, initial-scale=0.1, maximum-scale=1, user-scalable=yes">');
+	    }
+	</script>
 </head>
 <body>
+	<div class="rotate"></div>
 	<header>
 		<div class="sv__chief-container__100per header">
 			<div class="sv-row ">
@@ -148,22 +158,22 @@
 	                                    <a href="#">Режим &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    игроков &#9660;
+	                                    <a href="#">игроков &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    сервер &#9660;
+	                                    <a href="#">сервер &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    ставка &#9660;
+	                                    <a href="#">ставка &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    карта &#9660;
+	                                    <a href="#">карта &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    создатель &#9660;
+	                                    <a href="#">создатель &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    статус &#9660;
+	                                    <a href="#">статус &#9660;</a>
 	                                </th>
 	                            </th>
 	                            <tr>
@@ -276,22 +286,22 @@
 	                                    <a href="#">Режим &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    игроков &#9660;
+	                                    <a href="#">игроков &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    сервер &#9660;
+	                                    <a href="#">сервер &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    ставка &#9660;
+	                                    <a href="#">ставка &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    карта &#9660;
+	                                    <a href="#">карта &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    создатель &#9660;
+	                                    <a href="#">создатель &#9660;</a>
 	                                </th>
 	                                <th>
-	                                    статус &#9660;
+	                                    <a href="#">статус &#9660;</a>
 	                                </th>
 	                            </th>
 	                            <tr>

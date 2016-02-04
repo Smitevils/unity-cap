@@ -19,7 +19,22 @@
 
 //* {outline: 1px yellowgreen dashed;}
 
-html {font-size: 16px;}
+html {font-size: 16px!important;}
+
+.rotate {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(5, 5, 5, 1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../img/other/rotate.png");
+	background-size: 280px 280px;
+    z-index: 99999;
+    display: none;
+}
 
 .ivent-comment {
 	display: inline-block;
@@ -275,7 +290,7 @@ select.select-1 {
 }
 
 .end-match-container {
-	padding: 40px;
+	padding: 40px; padding-top: 60px;
 }
 .end-match-container__ivent {
 
@@ -331,6 +346,10 @@ select.select-1 {
 	@include flexbox-center__dir-col;
 	justify-content: center;
 	padding: 0;
+	background: url(../img/icons/angle-left-top.png) no-repeat left top,
+	url(../img/icons/angle-left-bottom.png) no-repeat bottom left,
+	url(../img/icons/angle-right-top.png) no-repeat top right,
+	url(../img/icons/angle-right-bottom.png) no-repeat bottom right;
 }
 
 .end-match-container__text {
@@ -524,9 +543,11 @@ select.select-1 {
 	@include RussoSans; font-size: 700px;
 	@include font-size(12px);
 	margin: 0;
+	@include transition-all__0-3;
 	//
 	&:after {
 		content: "";
+		@include transition-all__0-3;
 		display: inline-block;
 		height: 10px;
 		width: 6px;
@@ -534,6 +555,13 @@ select.select-1 {
 		background-size: contain;
 		margin-left: 10px;
 	}
+}
+.search-friends__list-user:hover {
+	color: $ft-color-1;
+}
+.search-friends__list-user:hover:after {
+	background: url('../img/icons/arrow-1.png') center no-repeat;
+	background-size: contain;
 }
 
 .input-search-friends {
@@ -766,7 +794,7 @@ select.select-1 {
 		content: "";
 		display: inline-block;
 		width: 24px;
-		height: 1px;
+		height: 2px;
 		position: absolute;
 		left: -40px;
 		top: 8px;
@@ -894,10 +922,18 @@ select.select-1 {
 	background-color: $bg-color-12;
 	border-bottom:2px solid $bg-color-4;
 }
+.games-table tr:nth-of-type(1) th:first-child {
+	background: url(../img/icons/angle-left-top.png) no-repeat top left,
+	url(../img/icons/angle-left-bottom.png) no-repeat bottom left;
+}
+.games-table tr:nth-of-type(1) th:last-child {
+	background: url(../img/icons/angle-right-top.png) no-repeat top right,
+	url(../img/icons/angle-right-bottom.png) no-repeat bottom right;
+}
 
 .games-table tr th {
 	text-align: left;
-	padding: 25px;
+	padding: 25px; padding-left: 0;
 	text-transform: uppercase;
 	@include RussoSans; font-weight: 700;
 	@include font-size(12px);
@@ -907,6 +943,20 @@ select.select-1 {
 		text-transform: uppercase;
 		@include RussoSans; font-weight: 700;
 		@include font-size(12px);
+		//
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 2px; height: 12px;
+			background-color: $ft-color-9;
+			margin-right: 25px;
+			vertical-align: middle;
+		}
+	}
+}
+.games-table tr th:first-child {
+	a:before {
+		visibility: hidden;
 	}
 }
 
@@ -924,11 +974,28 @@ select.select-1 {
 .game-statistic {
 	@include RussoSans; font-weight: 700;
 	@include font-size(9px);
+	@include transition-all__0-3;
 	margin: 30px 0 0 0;
 	color: $ft-color-2;
+	//
+	&:after {
+		content: "";
+		@include transition-all__0-3;
+		display: inline-block;
+		height: 10px;
+		width: 6px;
+		background: url('../img/icons/arrow-2.png') center no-repeat;
+		background-size: contain;
+		margin-left: 10px;
+		vertical-align: middle;
+	}
 }
 .game-statistic:hover {
 	color: $ft-color-1;
+}
+.game-statistic:hover:after {
+	background: url('../img/icons/arrow-1.png') center no-repeat;
+	background-size: contain;
 }
 
 /***************************************/
@@ -1158,6 +1225,29 @@ select.select-1 {
 	border-style: solid;
 	border-width: 14px 10px 14px 0;
 	border-color: transparent $ft-color-11 transparent transparent;
+}
+
+/*****************/
+
+.subscription__tarif__cost {
+	display: inline-block; position: absolute; top: 0; left: 0; z-index: 999;
+	background-color: $bg-color-11;
+	text-align: center;
+	padding: 18px 16px;
+	letter-spacing: 0;
+	@include MyriadPro;
+	font-weight: 400;
+	vertical-align: middle;
+	//
+	p {margin: 0;}
+	p:first-child {
+		@include font-size(20px);
+		line-height: 18px;
+	}
+	p:last-child {
+		@include font-size(16px);
+		line-height: 12px;
+	}
 }
 
 /***************************************/

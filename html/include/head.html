@@ -2,4 +2,13 @@
 <title>Counter Strike - Панель Администратора</title>
 <link rel="stylesheet" href="assets/js/malihu-custom-scrollbar/jquery.mCustomScrollbar.css">
 <link rel="stylesheet" href="assets/css/main.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+<script type="text/javascript">
+    if (screen.width > 700) { // Костыль для определения иных устройств, с коэффициентом отличным от 1
+        console.log(screen.width)
+        document.write('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">');
+    } else {
+        console.log(screen.width);
+        document.write('<meta name="viewport" content="width=device-width, initial-scale=0.1, maximum-scale=1, user-scalable=yes">');
+    }
+</script>
