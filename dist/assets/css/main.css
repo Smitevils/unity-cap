@@ -4809,9 +4809,6 @@ select.select-1 {
     width: 40%; }
   .subscription__tarif-info {
     padding: 0; }
-  .games-table tr th a {
-    font-size: 8px;
-    font-size: 0.5rem; }
   .chat__aside {
     padding: 10px; }
   .chat__submit {
@@ -4876,7 +4873,35 @@ select.select-1 {
     font-size: 1.25rem; }
   .chat-message__time {
     font-size: 18px;
-    font-size: 1.125rem; } }
+    font-size: 1.125rem; }
+  .games-table tr th a {
+    font-size: 12px;
+    font-size: 0.75rem; }
+  .search-friends .sv-division-25-per:first-child {
+    width: 25%; }
+  .search-friends .sv-division-50-per {
+    width: 40%; }
+  .search-friends .sv-division-25-per {
+    width: 35%; }
+  .games-table tr td {
+    padding: 16px;
+    font-size: 12px;
+    font-size: 0.75rem; }
+  .input-search-friends {
+    font-size: 16px;
+    font-size: 1rem; }
+  .search-friends__list-user {
+    font-size: 16px;
+    font-size: 1rem; }
+  .search-friends__quantity-friends {
+    font-size: 16px;
+    font-size: 1rem; }
+  .game-statistic {
+    font-size: 16px;
+    font-size: 1rem; }
+  .footer-content a, .footer-content p {
+    font-size: 16px;
+    font-size: 1rem; } }
 
 @media screen and (max-width: 768px) {
   html {
